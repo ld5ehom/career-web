@@ -3,7 +3,11 @@ import ReactDOM from "react-dom";
 
 import "@career-web/ui-kit/index.css";
 import { Button, Icon } from "@career-web/ui-kit";
+import { test } from "@career-web/shell-router";
 
+test();
+
+// Main Page
 const App = () => (
     <div className="container">
         <div>Name: shell</div>

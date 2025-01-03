@@ -55,6 +55,9 @@ module.exports = (_, argv) => ({
                     singleton: true,
                     requiredVersion: deps["react-dom"],
                 },
+                "@career-web/shell-router": {
+                    singleton: true,
+                },
                 "@career-web/ui-kit": {
                     singleton: true,
                 },
