@@ -196,3 +196,73 @@ pnpm --filter @career-web/shell-router add vite-plugin-dts -D
 ```
 
 -   shell-router vite.config.ts 셋업
+
+## react-router-dom 을 통한 내비게이션 구현
+
+```
+pnpm --filter @career-web/shell-router add react-router-dom
+```
+
+```
+pnpm i
+```
+
+```
+pnpm --filter @career-web/shell-router build
+```
+
+-   Posting 마이크로 앱을 shell 에 inject
+
+```
+cd apps
+pnpm create mf-app
+```
+
+```
+? Pick the name of your app: posting
+? Project Type: Application
+? Port number: 3001
+? Framework: react
+? Language: typescript
+? CSS: CSS
+? Bundler: Webpack
+Your 'posting' project is ready to go.
+```
+
+```
+cd ..
+```
+
+```
+pnpm i
+```
+
+```
+pnpm --filter @career-web/posting add react-router-dom
+```
+
+-   App-shell react-router-dom 설치
+
+```
+pnpm --filter @career-web/shell add react-router-dom
+```
+
+## Auth0 App shell 인증처리
+
+-   REACT APP AUTH0 .env plugin 설치
+
+```
+pnpm --filter @career-web/shell add dotenv-webpack -D
+```
+
+```
+pnpm --filter @career-web/shell add @auth0/auth0-react
+```
+
+```
+pnpm --filter @career-web/shell add @types/node -D
+```
+
+```
+pnpm --filter @career-web/shell add @babel/runtime -D
+```

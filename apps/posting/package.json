@@ -1,12 +1,12 @@
 {
-    "name": "@career-web/shell",
+    "name": "@career-web/posting",
     "version": "1.0.0",
     "scripts": {
         "build": "webpack --mode production",
         "build:dev": "webpack --mode development",
-        "build:start": "cd dist && PORT=3000 npx serve",
-        "start": "webpack serve --open --mode development",
-        "start:live": "webpack serve --open --mode development --live-reload --hot"
+        "build:start": "cd dist && PORT=3001 npx serve",
+        "start": "webpack serve --mode development",
+        "start:live": "webpack serve --mode development --live-reload --hot"
     },
     "license": "MIT",
     "author": {
@@ -19,8 +19,6 @@
         "@babel/preset-env": "^7.15.8",
         "@babel/preset-react": "^7.14.5",
         "@babel/preset-typescript": "^7.10.4",
-        "@babel/runtime": "^7.26.0",
-        "@types/node": "^22.10.5",
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.0",
         "autoprefixer": "^10.1.0",
@@ -37,7 +35,6 @@
         "webpack-dev-server": "^4.3.1"
     },
     "dependencies": {
-        "@auth0/auth0-react": "^2.2.4",
         "@career-web/shell-router": "workspace:*",
         "@career-web/ui-kit": "workspace:*",
         "react": "^18.2.0",

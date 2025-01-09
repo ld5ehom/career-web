@@ -18,14 +18,12 @@
 -   [Google material Symbol](https://fonts.google.com/iconss)
 -   [Day.js](https://day.js.org/docs/en/installation/installation)
 -   [Scroll-lock](https://www.npmjs.com/package/scroll-lock)
--   [Faker.js](https://fakerjs.dev/guide/)
 -   [Intersection Observer Docs](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 -   [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer)
 -   [React Responsive Carousel](https://react-responsive-carousel.js.org/)
 -   [Lodash](https://lodash.com/docs/#throttle)
--   [Toast UI](https://nhn.github.io/tui.editor/latest/)
 -   [React Virtuoso](https://virtuoso.dev/)
--   [Supabase Auth](https://supabase.com/docs/guides/auth/managing-user-data)
+-   [Auth0](https://auth0.com)
 
 ---
 
@@ -42,7 +40,7 @@ Career Platform Architecture
 │   └── Micro Apps:
 │       ├── Postings (Job/Content Posting)
 │       ├── Network (User Connections and Recommendations)
-│       ├── Education (Courses and Learning Materials)
+│       ├── Video (Courses and Learning Materials)
 │       └── Job (Job Listings and Applications)
 └── Shared Packages
     ├── career-web/ui-kit
@@ -73,11 +71,11 @@ pnpm i
 ```
 
 ```
-pnpm build --filter @career-web/ui-kit
+pnpm build
 ```
 
 ```
-pnpm --filter @career-web/shell start:live
+pnpm dev
 ```
 
 ---
@@ -90,13 +88,19 @@ pnpm --filter @career-web/shell start:live
 
 -   **Issues** : [task-1-layout](https://github.com/ld5ehom/career-web/tree/task-1-layout)
 -   **Details** :
-    -   **Setup and Configure App Shell and React Icons**
+    -   **Setup and Configure App Shell and React Icons** [f301e05](https://github.com/ld5ehom/career-web/commit/f301e0522042430fdd637021ef85b6a9c70e0805)
         -   Setup for React Icons to Implement Components
         -   Create and Configure App Shell Package
+    -   **Implement authentication handling and navigation with react-router-dom**
+        -   Set up routing between micro apps based on browser URLs: Established routing system to ensure seamless navigation across micro frontends, allowing users to switch between different micro apps without page reloads.
+        -   Dynamically managed micro app routes within the Shell application: Routes for each micro app are dynamically added and managed within the Shell, ensuring that each micro app is accessible via its respective URL. This allows for a flexible routing structure that can adapt to changes in the system.
+        -   Integrated authentication handling into the routing system: Authentication guards were added to protect specific routes. If a user is not authenticated, they are redirected to a login page, ensuring unauthorized users cannot access sensitive content.
+        -   Utilized React Router for smooth micro app integration: React Router was used to manage navigation, allowing each micro app to independently render its React components while ensuring smooth integration into the Shell application. This also supports deep linking and route-specific logic for each micro app.
+        -   Set up a consistent layout and styling across all micro apps: A common layout and shared styling were established to ensure that the UI remains consistent across all micro apps, providing a unified user experience. This includes a global header, footer, and other components that are reused across the different micro frontends.
 
-**Task 2. Posting**
+**Task 2. Home Posting**
 
-**Task 3. Education**
+**Task 3. Video**
 
 **Task 4. Network**
 
