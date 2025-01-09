@@ -1,11 +1,15 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const path = require("path");
 const Dotenv = require("dotenv-webpack");
 
 const deps = require("./package.json").dependencies;
+
+const printCompilationMessage = require("./compilation.config.js");
+
 module.exports = (_, argv) => ({
     output: {
-        publicPath: "http://localhost:3000/",
+        publicPath: "http://localhost:3001/",
     },
 
     resolve: {
@@ -13,8 +17,27 @@ module.exports = (_, argv) => ({
     },
 
     devServer: {
-        port: 3000,
+        port: 3001,
         historyApiFallback: true,
+        watchFiles: [path.resolve(__dirname, "src")],
+        onListening: function (devServer) {
+            const port = devServer.server.address().port;
+
+            printCompilationMessage("compiling", port);
+
+            devServer.compiler.hooks.done.tap(
+                "OutputMessagePlugin",
+                (stats) => {
+                    setImmediate(() => {
+                        if (stats.hasErrors()) {
+                            printCompilationMessage("failure", port);
+                        } else {
+                            printCompilationMessage("success", port);
+                        }
+                    });
+                }
+            );
+        },
     },
 
     module: {
@@ -41,14 +64,13 @@ module.exports = (_, argv) => ({
     },
 
     plugins: [
-        new Dotenv(),
         new ModuleFederationPlugin({
-            name: "shell",
+            name: "posting",
             filename: "remoteEntry.js",
-            remotes: {
-                posting: "posting@http://localhost:3001/remoteEntry.js", // Post@server
+            remotes: {},
+            exposes: {
+                "./injector": "./src/injector.tsx",
             },
-            exposes: {},
             shared: {
                 ...deps,
                 react: {
@@ -70,5 +92,6 @@ module.exports = (_, argv) => ({
         new HtmlWebPackPlugin({
             template: "./src/index.html",
         }),
+        new Dotenv(),
     ],
 });
