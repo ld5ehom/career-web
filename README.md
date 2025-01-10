@@ -24,6 +24,7 @@
 -   [Lodash](https://lodash.com/docs/#throttle)
 -   [React Virtuoso](https://virtuoso.dev/)
 -   [Auth0](https://auth0.com)
+-   [npm Json Server](https://github.com/typicode/json-server/tree/v0)
 
 ---
 
@@ -91,14 +92,18 @@ pnpm dev
     -   **Setup and Configure App Shell and React Icons** [f301e05](https://github.com/ld5ehom/career-web/commit/f301e0522042430fdd637021ef85b6a9c70e0805)
         -   Setup for React Icons to Implement Components
         -   Create and Configure App Shell Package
-    -   **Implement authentication handling and navigation with react-router-dom**
+    -   **Implement authentication handling and navigation with react-router-dom** [83eb95a](https://github.com/ld5ehom/career-web/commit/83eb95abd9113cd7790af6d3d5645f13004cc8fa)
         -   Set up routing between micro apps based on browser URLs: Established routing system to ensure seamless navigation across micro frontends, allowing users to switch between different micro apps without page reloads.
         -   Dynamically managed micro app routes within the Shell application: Routes for each micro app are dynamically added and managed within the Shell, ensuring that each micro app is accessible via its respective URL. This allows for a flexible routing structure that can adapt to changes in the system.
         -   Integrated authentication handling into the routing system: Authentication guards were added to protect specific routes. If a user is not authenticated, they are redirected to a login page, ensuring unauthorized users cannot access sensitive content.
         -   Utilized React Router for smooth micro app integration: React Router was used to manage navigation, allowing each micro app to independently render its React components while ensuring smooth integration into the Shell application. This also supports deep linking and route-specific logic for each micro app.
         -   Set up a consistent layout and styling across all micro apps: A common layout and shared styling were established to ensure that the UI remains consistent across all micro apps, providing a unified user experience. This includes a global header, footer, and other components that are reused across the different micro frontends.
 
-**Task 2. Home Posting**
+**Task 2. Home Post**
+
+-   **Issues** : [task-2-post](https://github.com/ld5ehom/career-web/tree/task-2-post)
+-   **Details** :
+    -   **TEST API Setup**
 
 **Task 3. Video**
 

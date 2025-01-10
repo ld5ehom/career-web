@@ -266,3 +266,25 @@ pnpm --filter @career-web/shell add @types/node -D
 ```
 pnpm --filter @career-web/shell add @babel/runtime -D
 ```
+
+## Server Test API 생성
+
+```
+mkdir server
+```
+
+```
+cd server
+```
+
+```
+pnpm init
+```
+
+```
+cd ..
+```
+
+```
+pnpm --filter @career-web/server add json-server@^0.17.4
+```
