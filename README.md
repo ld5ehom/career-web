@@ -103,7 +103,33 @@ pnpm dev
 
 -   **Issues** : [task-2-post](https://github.com/ld5ehom/career-web/tree/task-2-post)
 -   **Details** :
-    -   **TEST API Setup**
+    -   **TEST API Setup** [2209c2b](https://github.com/ld5ehom/career-web/commit/2209c2be6294e6893e1a56263de46cf2b05df0c1)
+        ```
+        pnpm --filter @career-web/server start:live
+        ```
+        ```
+        http://localhost:4000/posts
+        ```
+    -   **Posting Setup**
+        -   Install the Auth0 package in the posting
+        ```
+        pnpm --filter @career-web/posting add @auth0/auth0-spa-js
+        ```
+        ```
+        pnpm --filter @career-web/posting add @types/node -D
+        ```
+        -   Set the TypeScript version to 5.7.3
+        -   The career-web.code-workspace was created for managing frontend applications, shared packages, and the backend server within a monorepo structure.
+        -   In order to share the created functionality across the entire application, a context and provider/auth0-client-provider.tsx were created.
+        ```
+        pnpm --filter @career-web/posting add dotenv-webpack -D
+        ```
+        ```
+        pnpm --filter @career-web/posting add @babel/runtime
+        ```
+        ```
+        pnpm --filter @career-web/posting add eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+        ```
 
 **Task 3. Video**
 

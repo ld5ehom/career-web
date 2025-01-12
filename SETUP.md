@@ -288,3 +288,15 @@ cd ..
 ```
 pnpm --filter @career-web/server add json-server@^0.17.4
 ```
+
+## Post Setup
+
+-   Install the Auth0 package in the posting
+
+```
+pnpm --filter @career-web/posting add @auth0/auth0-spa-js
+```
+
+```
+pnpm --filter @career-web/posting add @types/node -D
+```
