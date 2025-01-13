@@ -6,7 +6,7 @@
 -   The Shell acts as the primary host application, with each micro app functioning as a remote module. It manages authentication and leverages React Router to navigate between micro apps based on browser URLs. Webpack Module Federation connects the Shell and micro apps, enabling independent React render lifecycles for each app. This design ensures micro apps operate autonomously while remaining part of a unified system.
 -   Shared logic and components, such as the UI-Kit and Shell-Router, were extracted into standalone packages and integrated into both the Shell and micro apps during the build process. Modules are managed based on package.json configurations, with Build-Time Shared settings preventing duplication. Webpack Module Federation and peerDependencies optimize React library loading, enabling seamless integration of shared functionality while supporting independent micro app development.
 -   Designed two core modules, ui-kit and shell-router. The career-web/ui-kit delivers components for global styling and ensures visual consistency across the application. The career-web/shell-router streamlines interaction between the Shell and micro apps by managing routing and authentication information through hooks, components, and factory functions.
--   Utilized : TypeScript, React, pnpm workspace, Turborepo, Webpack, Vite,
+-   Utilized : TypeScript, React, pnpm workspace, Turborepo, Webpack, Vite, SCSS
 
 ---
 
@@ -110,7 +110,7 @@ pnpm dev
         ```
         http://localhost:4000/posts
         ```
-    -   **Posting Setup**
+    -   **Posting Setup** [eb39f1c](https://github.com/ld5ehom/career-web/commit/eb39f1ceb70dfc59e0c1340381b40da3d4cefd6a)
         -   Install the Auth0 package in the posting
         ```
         pnpm --filter @career-web/posting add @auth0/auth0-spa-js
@@ -130,6 +130,10 @@ pnpm dev
         ```
         pnpm --filter @career-web/posting add eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
         ```
+    -   **Posting components update**
+        -   Updated the Post, WritePost, and Profile components.
+        -   Improved useEffect hooks for fetching data (posts and user).
+        -   Integrated getUser, getPosts, removePost, and createPost API calls into components for better functionality.
 
 **Task 3. Video**
 

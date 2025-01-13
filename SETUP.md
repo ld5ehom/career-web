@@ -300,3 +300,10 @@ pnpm --filter @career-web/posting add @auth0/auth0-spa-js
 ```
 pnpm --filter @career-web/posting add @types/node -D
 ```
+
+## User Token
+
+```
+curl --location 'http://localhost:4000/user' \
+--header 'Authorization: Bearer 토큰'
+```
