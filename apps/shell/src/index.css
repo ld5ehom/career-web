@@ -66,6 +66,8 @@
 .global-nav-link-text {
     font-size: 13px;
 }
+/* Background color 전체 배경 */
 .global-container {
     padding-top: 53px;
+    background-color: aliceblue;
 }
