@@ -52,7 +52,7 @@
         }
     ],
 
-    "courses": [
+    "videos": [
         {
             "id": 1,
             "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
@@ -84,7 +84,7 @@
             "description": "Learn web development through HTML, CSS, JavaScript, and backend technologies like Node.js and databases. Build scalable web applications."
         }
     ],
-    "course-contents": [
+    "video-contents": [
         {
             "id": 1,
             "goals": [

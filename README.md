@@ -2,7 +2,7 @@
 
 ## Project Overview
 
--   Developed a single repository using Micro Frontend Architecture (MFA) to integrate multiple projects, including user account management, networking, education, job postings, and shared components like a UI-Kit and shell-router.
+-   Developed a single repository using Micro Frontend Architecture (MFA) to integrate multiple projects, including user account management, networking, video, job postings, and shared components like a UI-Kit and shell-router.
 -   The Shell acts as the primary host application, with each micro app functioning as a remote module. It manages authentication and leverages React Router to navigate between micro apps based on browser URLs. Webpack Module Federation connects the Shell and micro apps, enabling independent React render lifecycles for each app. This design ensures micro apps operate autonomously while remaining part of a unified system.
 -   Shared logic and components, such as the UI-Kit and Shell-Router, were extracted into standalone packages and integrated into both the Shell and micro apps during the build process. Modules are managed based on package.json configurations, with Build-Time Shared settings preventing duplication. Webpack Module Federation and peerDependencies optimize React library loading, enabling seamless integration of shared functionality while supporting independent micro app development.
 -   Designed two core modules, ui-kit and shell-router. The career-web/ui-kit delivers components for global styling and ensures visual consistency across the application. The career-web/shell-router streamlines interaction between the Shell and micro apps by managing routing and authentication information through hooks, components, and factory functions.
@@ -139,8 +139,9 @@ pnpm dev
 
 -   **Issues** : [task-3-video](https://github.com/ld5ehom/career-web/tree/task-3-video)
 -   **Details** :
-    -   **Video Packages Setup with Jotai and Emotion**
+    -   **Video Packages Setup with Jotai and Emotion** [446c13e](https://github.com/ld5ehom/career-web/commit/446c13e715043bc17528a79e4912adcfc4d8d38b)
         -   Set up a video management package that leverages Jotai for state management and Emotion for styling.
+    -   **Video API Setup**
 
 **Task 4. Network**
 
