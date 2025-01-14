@@ -9,6 +9,10 @@
             "path": "apps/posting",
         },
         {
+            "name": "video",
+            "path": "apps/video",
+        },
+        {
             "name": "shell-router",
             "path": "packages/shell-router",
         },

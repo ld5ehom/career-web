@@ -1,11 +1,15 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const path = require("path");
 const Dotenv = require("dotenv-webpack");
 
 const deps = require("./package.json").dependencies;
+
+const printCompilationMessage = require("./compilation.config.js");
+
 module.exports = (_, argv) => ({
     output: {
-        publicPath: "http://localhost:3001/",
+        publicPath: "http://localhost:3002/",
     },
 
     resolve: {
@@ -13,8 +17,27 @@ module.exports = (_, argv) => ({
     },
 
     devServer: {
-        port: 3001,
+        port: 3002,
         historyApiFallback: true,
+        watchFiles: [path.resolve(__dirname, "src")],
+        onListening: function (devServer) {
+            const port = devServer.server.address().port;
+
+            printCompilationMessage("compiling", port);
+
+            devServer.compiler.hooks.done.tap(
+                "OutputMessagePlugin",
+                (stats) => {
+                    setImmediate(() => {
+                        if (stats.hasErrors()) {
+                            printCompilationMessage("failure", port);
+                        } else {
+                            printCompilationMessage("success", port);
+                        }
+                    });
+                }
+            );
+        },
     },
 
     module: {
@@ -45,7 +68,7 @@ module.exports = (_, argv) => ({
             path: "../../.env",
         }),
         new ModuleFederationPlugin({
-            name: "posting",
+            name: "video",
             filename: "remoteEntry.js",
             remotes: {},
             exposes: {

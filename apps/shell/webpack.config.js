@@ -41,12 +41,15 @@ module.exports = (_, argv) => ({
     },
 
     plugins: [
-        new Dotenv(),
+        new Dotenv({
+            path: "../../.env",
+        }),
         new ModuleFederationPlugin({
             name: "shell",
             filename: "remoteEntry.js",
             remotes: {
                 posting: "posting@http://localhost:3001/remoteEntry.js",
+                video: "video@http://localhost:3002/remoteEntry.js",
             },
             exposes: {},
             shared: {
