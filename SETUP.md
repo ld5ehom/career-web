@@ -307,3 +307,48 @@ pnpm --filter @career-web/posting add @types/node -D
 curl --location 'http://localhost:4000/user' \
 --header 'Authorization: Bearer 토큰'
 ```
+
+## Video webpack Setup
+
+```
+cd apps
+pnpm create mf-app
+
+? Pick the name of your app: video
+? Project Type: Application
+? Port number: 3002
+? Framework: react
+? Language: typescript
+? CSS: CSS
+? Bundler: Webpack
+```
+
+-   video/package.json setup
+
+```
+pnpm i
+```
+
+```
+pnpm --filter @career-web/video add react-router-dom @auth0/auth0-spa-js @babel/runtime
+```
+
+```
+pnpm --filter @career-web/video add dotenv-webpack @types/node eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+```
+
+## jotai, emotion install
+
+```
+pnpm --filter @career-web/video add @emotion/styled @emotion/react jotai
+```
+
+## Kill port
+
+```
+pnpm add kill-port -D -w
+```
+
+```
+pnpm kill-port 3000 3001 3002 4000
+```

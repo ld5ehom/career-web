@@ -23,8 +23,16 @@ server.use(async (req, res, next) => {
 
 // /user 엔드포인트에 사용자 정보 반환 (Return user info at the /user endpoint)
 server.get("/user", (req, res) => {
-    res.jsonp({ ...req.user, view_count: 249, update_count: 100 });
     // 사용자 정보에 조회 및 업데이트 카운트 추가하여 반환 (Return user info with view and update counts)
+    res.jsonp({
+        ...req.user,
+        view_count: 249,
+        update_count: 100,
+        courses: [
+            { courseId: 1, done: true },
+            { courseId: 4, done: false },
+        ],
+    });
 });
 
 // POST 요청의 본문 데이터를 처리하기 위한 바디 파서 사용 (Use body parser to handle POST request body data)

@@ -130,12 +130,17 @@ pnpm dev
         ```
         pnpm --filter @career-web/posting add eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
         ```
-    -   **Posting components update**
+    -   **Posting components update** [e087192](https://github.com/ld5ehom/career-web/commit/e087192d392ac0407ade30c4f93957294767befe)
         -   Updated the Post, WritePost, and Profile components.
         -   Improved useEffect hooks for fetching data (posts and user).
         -   Integrated getUser, getPosts, removePost, and createPost API calls into components for better functionality.
 
 **Task 3. Video**
+
+-   **Issues** : [task-3-video](https://github.com/ld5ehom/career-web/tree/task-3-video)
+-   **Details** :
+    -   **Video Packages Setup with Jotai and Emotion**
+        -   Set up a video management package that leverages Jotai for state management and Emotion for styling.
 
 **Task 4. Network**
 
