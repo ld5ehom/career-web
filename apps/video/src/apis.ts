@@ -1,5 +1,8 @@
-import { type VideoContentsType, type VideoType, type UserType } from "./types";
-
+import {
+    type CourseContentsType,
+    type CourseType,
+    type UserType,
+} from "./types";
 /**
  * Fetches a list of videos from the server.
  * 서버에서 비디오 목록을 불러옵니다.
@@ -7,7 +10,7 @@ import { type VideoContentsType, type VideoType, type UserType } from "./types";
  * @param token - Authentication token (인증 토큰)
  * @returns A promise that resolves to an array of VideoType (VideoType 배열을 반환하는 Promise)
  */
-export async function getVideos(token: string): Promise<VideoType[]> {
+export async function getCourses(token: string): Promise<CourseType[]> {
     const res = await fetch(
         "http://localhost:4000/videos?_sort=id&_order=desc",
         {
@@ -31,7 +34,7 @@ export async function getVideos(token: string): Promise<VideoType[]> {
 export async function getVideoContents(
     token: string,
     id: number
-): Promise<VideoContentsType> {
+): Promise<CourseContentsType> {
     const res = await fetch(`http://localhost:4000/video-contents/${id}`, {
         headers: {
             Authorization: `Bearer ${token}`, // Authorization header with token (토큰을 포함한 인증 헤더)
