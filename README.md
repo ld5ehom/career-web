@@ -79,6 +79,12 @@ pnpm build
 pnpm dev
 ```
 
+-   Kill port
+
+```
+pnpm kill-port 3000 3001 3002 4000
+```
+
 ---
 
 ## Task List
@@ -141,7 +147,11 @@ pnpm dev
 -   **Details** :
     -   **Video Packages Setup with Jotai and Emotion** [446c13e](https://github.com/ld5ehom/career-web/commit/446c13e715043bc17528a79e4912adcfc4d8d38b)
         -   Set up a video management package that leverages Jotai for state management and Emotion for styling.
-    -   **Video API Setup**
+    -   **Video API Setup** [0de3e81](https://github.com/ld5ehom/career-web/commit/0de3e81d0dece577aaa46e4e225d4772eb8c6422)
+    -   **Video Profile Container Build**
+        -   Implemented the Video Profile UI to display user information such as profile image, name, email, profile views, and update exposure.
+        -   Integrated user data fetching using Jotai state management to dynamically display real-time profile information.
+        -   Added responsive styling for the profile component using styled-components to ensure a seamless user experience across devices.
 
 **Task 4. Network**
 
