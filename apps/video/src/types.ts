@@ -6,8 +6,7 @@ export interface UserType extends User {
     courses: { courseId: number; done: false }[];
 }
 
-// Video Course type
-export interface VideoType {
+export interface CourseType {
     id: number;
     thumbnail: string;
     title: string;
@@ -15,8 +14,7 @@ export interface VideoType {
     contents?: string;
 }
 
-// Video course contents type
-export interface VideoContentsType {
+export interface CourseContentsType {
     id: number;
     goals: string[];
     summaries: string[];
