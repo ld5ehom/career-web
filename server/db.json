@@ -7,7 +7,7 @@
             "author": {
                 "email": "john.doe@example.com",
                 "name": "John Doe",
-                "picture": "https://via.placeholder.com/96"
+                "picture": "/ucla-logo-180.png"
             }
         },
         {
@@ -17,7 +17,7 @@
             "author": {
                 "email": "jane.smith@example.com",
                 "name": "Jane Smith",
-                "picture": "https://via.placeholder.com/96"
+                "picture": "/ucla-logo-180.png"
             }
         },
         {
@@ -27,7 +27,7 @@
             "author": {
                 "email": "michael.brown@example.com",
                 "name": "Michael Brown",
-                "picture": "https://via.placeholder.com/96"
+                "picture": "/ucla-logo-180.png"
             }
         },
         {
@@ -37,7 +37,7 @@
             "author": {
                 "name": "Emily Davis",
                 "email": "emily.davis@example.com",
-                "picture": "https://via.placeholder.com/96"
+                "picture": "/ucla-logo-180.png"
             }
         },
         {
@@ -47,7 +47,7 @@
             "author": {
                 "name": "Chris Wilson",
                 "email": "chris.wilson@example.com",
-                "picture": "https://via.placeholder.com/96"
+                "picture": "/ucla-logo-180.png"
             }
         }
     ],
@@ -55,35 +55,36 @@
     "videos": [
         {
             "id": 1,
-            "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
+            "thumbnail": "/ucla-logo-180.png",
             "title": "CS 31: Introduction to Computer Science I",
             "description": "Learn the foundations of programming and problem solving using Python. This course covers algorithms, data structures, and problem-solving techniques."
         },
         {
             "id": 2,
-            "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
+            "thumbnail": "/ucla-logo-180.png",
             "title": "CS 32: Intermediate Computer Science",
             "description": "A continuation of CS 31, this course focuses on data structures, object-oriented programming, and algorithm analysis."
         },
         {
             "id": 3,
-            "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
+            "thumbnail": "/ucla-logo-180.png",
             "title": "CS 33: Computer Organization and Logic Design",
             "description": "Study the fundamental principles of computer systems, including digital logic, assembly language, and computer architecture."
         },
         {
             "id": 4,
-            "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
+            "thumbnail": "/ucla-logo-180.png",
             "title": "CS 35L: Software Construction Lab",
             "description": "Learn the skills of software development including version control, debugging, testing, and building applications with modern programming tools."
         },
         {
             "id": 5,
-            "thumbnail": "https://www.cs.ucla.edu/wp-content/uploads/2025/02/cs-logo.png",
+            "thumbnail": "/ucla-logo-180.png",
             "title": "CS 172: Web Programming",
             "description": "Learn web development through HTML, CSS, JavaScript, and backend technologies like Node.js and databases. Build scalable web applications."
         }
     ],
+
     "video-contents": [
         {
             "id": 1,
@@ -110,45 +111,6 @@
                 "• Implement data structures like trees, graphs, and hash tables in practical applications.",
                 "• Learn to optimize algorithms for both time and space efficiency.",
                 "• Build more complex applications that require advanced problem-solving skills."
-            ]
-        },
-        {
-            "id": 3,
-            "goals": [
-                "• Learn how computers process data through assembly language and machine-level programming.",
-                "• Understand the internal workings of a computer, including logic gates and circuits.",
-                "• Study fundamental principles of computer architecture and the design of digital systems."
-            ],
-            "summaries": [
-                "• Implement low-level code to interact with hardware and memory management.",
-                "• Understand key concepts like the CPU, memory hierarchy, and data representation.",
-                "• Gain practical experience working with assembly language and understanding computer systems."
-            ]
-        },
-        {
-            "id": 4,
-            "goals": [
-                "• Develop software engineering skills, including version control and debugging.",
-                "• Learn to build robust software systems with real-world project experience.",
-                "• Master software construction techniques such as testing and modular design."
-            ],
-            "summaries": [
-                "• Work on a team project to design, implement, and test a large-scale software application.",
-                "• Improve your coding skills by working on practical software development tasks.",
-                "• Apply best practices for debugging and testing to ensure quality code."
-            ]
-        },
-        {
-            "id": 5,
-            "goals": [
-                "• Master web development with modern front-end and back-end technologies.",
-                "• Build dynamic and interactive web applications using JavaScript, Node.js, and databases.",
-                "• Learn to design scalable, maintainable web systems that can handle real-world traffic."
-            ],
-            "summaries": [
-                "• Create full-stack web applications from front-end design to back-end implementation.",
-                "• Learn best practices for optimizing web performance and ensuring system reliability.",
-                "• Explore topics like responsive design, security, and advanced backend frameworks."
             ]
         }
     ]

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { LayoutWrapper } from "./layout.styles";
 import { useSetAtom } from "jotai";
-import { videosAtom, userAtom } from "../atoms";
+import { coursesAtom, userAtom } from "../atoms";
 import useAuth0Client from "../hooks/use-auth0-client";
-import { getVideos, getUser } from "../apis";
+import { getCourses, getUser } from "../apis";
 import ProfileContainer from "../containers/profile-container";
 import MyCourseInfoContainer from "../containers/my-course-info-container";
 
@@ -14,7 +14,7 @@ import MyCourseInfoContainer from "../containers/my-course-info-container";
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
     const auth0Client = useAuth0Client(); // Auth0 클라이언트 인스턴스 가져오기
     const setUser = useSetAtom(userAtom); // 사용자 정보를 전역 상태에 저장
-    const setVideos = useSetAtom(videosAtom); // 비디오 목록을 전역 상태에 저장
+    const setCourses = useSetAtom(coursesAtom); // 비디오 목록을 전역 상태에 저장
 
     /**
      * Fetch user and video data on component mount.
@@ -25,12 +25,12 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
             try {
                 const token = await auth0Client.getTokenSilently(); // 인증 토큰 가져오기
                 getUser(token).then(setUser); // 사용자 정보 불러오기 및 상태 업데이트
-                getVideos(token).then(setVideos); // 비디오 정보 불러오기 및 상태 업데이트
+                getCourses(token).then(setCourses); // 비디오 정보 불러오기 및 상태 업데이트
             } catch (error) {
                 alert(error);
             }
         })();
-    }, [auth0Client, setVideos, setUser]);
+    }, [auth0Client, setCourses, setUser]);
 
     return (
         <LayoutWrapper>

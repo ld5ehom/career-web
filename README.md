@@ -152,9 +152,13 @@ pnpm kill-port 3000 3001 3002 4000
         -   Implemented the Video Profile UI to display user information such as profile image, name, email, profile views, and update exposure.
         -   Integrated user data fetching using Jotai state management to dynamically display real-time profile information.
         -   Added responsive styling for the profile component using styled-components to ensure a seamless user experience across devices.
-    -   **Video Course Container Build**
+    -   **Video Course Container Build** [9c9498a](https://github.com/ld5ehom/career-web/commit/9c9498af81561e013406f2b8af07f0b12eb99a69)
         -   Separated the video course section for better scalability, enabling the addition of various content types to the video field in the future.
         -   Designed to handle lecture-style content, similar to LinkedIn Learning videos.
+    -   **Video Center List Container Build**
+        -   Refactored function names to separate course content from the Video section for better modularity.
+        -   Implemented a dummy file to display the Video Center Course List.
+        -   Enabled navigation to the specific course page when a course item is clicked based on its ID.
 
 **Task 4. Network**
 
