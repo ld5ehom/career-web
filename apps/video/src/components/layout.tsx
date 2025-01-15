@@ -5,6 +5,7 @@ import { videosAtom, userAtom } from "../atoms";
 import useAuth0Client from "../hooks/use-auth0-client";
 import { getVideos, getUser } from "../apis";
 import ProfileContainer from "../containers/profile-container";
+import MyCourseInfoContainer from "../containers/my-course-info-container";
 
 /**
  * Layout component that structures the main page layout with profile and video information.
@@ -36,7 +37,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
             {/* Left Sidegbar : 프로필 및 비디오 정보 */}
             <div className="video--layout-left">
                 <ProfileContainer />
-                {/* <MyVideoInfoContainer /> */}
+                <MyCourseInfoContainer />
             </div>
 
             {/* Centern contents */}

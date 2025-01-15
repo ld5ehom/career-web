@@ -148,10 +148,13 @@ pnpm kill-port 3000 3001 3002 4000
     -   **Video Packages Setup with Jotai and Emotion** [446c13e](https://github.com/ld5ehom/career-web/commit/446c13e715043bc17528a79e4912adcfc4d8d38b)
         -   Set up a video management package that leverages Jotai for state management and Emotion for styling.
     -   **Video API Setup** [0de3e81](https://github.com/ld5ehom/career-web/commit/0de3e81d0dece577aaa46e4e225d4772eb8c6422)
-    -   **Video Profile Container Build**
+    -   **Video Profile Container Build** [e59aa03](https://github.com/ld5ehom/career-web/commit/e59aa030fc2754ef2d93e40adbc9ec4eac4f8cdb)
         -   Implemented the Video Profile UI to display user information such as profile image, name, email, profile views, and update exposure.
         -   Integrated user data fetching using Jotai state management to dynamically display real-time profile information.
         -   Added responsive styling for the profile component using styled-components to ensure a seamless user experience across devices.
+    -   **Video Course Container Build**
+        -   Separated the video course section for better scalability, enabling the addition of various content types to the video field in the future.
+        -   Designed to handle lecture-style content, similar to LinkedIn Learning videos.
 
 **Task 4. Network**
 
