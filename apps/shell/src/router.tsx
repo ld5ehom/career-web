@@ -5,13 +5,18 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Layout from "./components/layout";
-import { appVideoBasename, appPostingBasename } from "./constants/prefix";
+import {
+    appVideoBasename,
+    appPostingBasename,
+    appNetworkBasename,
+} from "./constants/prefix";
 import { Auth0ProviderWithNavigator } from "./components/auth0-provider-with-navigator";
 
 // Lazy load the AppPosting component to optimize performance
 // 성능 최적화를 위해 AppPosting 컴포넌트를 Lazy Loading으로 가져옴
 const AppPostingLazy = React.lazy(() => import("./components/app-posting"));
 const AppVideoLazy = React.lazy(() => import("./components/app-video"));
+const AppNetworkLazy = React.lazy(() => import("./components/app-network"));
 
 // Create the browser router with defined routes
 // 정의된 경로로 브라우저 라우터 생성
@@ -44,6 +49,14 @@ const browserRouter = createBrowserRouter([
                 element: (
                     <Suspense fallback="Loading Video...">
                         <AppVideoLazy />
+                    </Suspense>
+                ),
+            },
+            {
+                path: `${appNetworkBasename}/*`,
+                element: (
+                    <Suspense fallback="Loading Network...">
+                        <AppNetworkLazy />
                     </Suspense>
                 ),
             },

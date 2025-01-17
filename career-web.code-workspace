@@ -13,6 +13,10 @@
             "path": "apps/video",
         },
         {
+            "name": "network",
+            "path": "apps/network",
+        },
+        {
             "name": "shell-router",
             "path": "packages/shell-router",
         },
