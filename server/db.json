@@ -152,5 +152,67 @@
                 "• Optimize web applications for performance, accessibility, and security."
             ]
         }
+    ],
+    "connections": [
+        {
+            "name": "John Smith",
+            "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+            "role": "Frontend Developer",
+            "networkCount": 102
+        },
+        {
+            "name": "Emily Johnson",
+            "picture": null,
+            "role": "Backend Developer",
+            "networkCount": 72
+        },
+        {
+            "name": "Michael Williams",
+            "picture": null,
+            "role": "Project Manager",
+            "networkCount": 60
+        },
+        {
+            "name": "Buddy",
+            "picture": null,
+            "role": "Golden Retriever",
+            "networkCount": 50
+        },
+        {
+            "name": "Max",
+            "picture": null,
+            "role": "Pomeranian",
+            "networkCount": 500
+        },
+        {
+            "name": "John Smith",
+            "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+            "role": "Frontend Developer",
+            "networkCount": 102
+        },
+        {
+            "name": "Emily Johnson",
+            "picture": null,
+            "role": "Backend Developer",
+            "networkCount": 72
+        },
+        {
+            "name": "Michael Williams",
+            "picture": null,
+            "role": "Project Manager",
+            "networkCount": 60
+        },
+        {
+            "name": "Buddy",
+            "picture": null,
+            "role": "Golden Retriever",
+            "networkCount": 50
+        },
+        {
+            "name": "Max",
+            "picture": null,
+            "role": "Pomeranian",
+            "networkCount": 500
+        }
     ]
 }

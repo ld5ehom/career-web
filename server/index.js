@@ -35,6 +35,17 @@ server.get("/user", (req, res) => {
     });
 });
 
+// Network API
+server.get("/my-network", (req, res) => {
+    res.jsonp({
+        connectionCount: 123,
+        contactCount: 1234,
+        eventCount: 0,
+        pageCount: 0,
+        user: req.user,
+    });
+});
+
 // POST 요청의 본문 데이터를 처리하기 위한 바디 파서 사용 (Use body parser to handle POST request body data)
 server.use(jsonServer.bodyParser);
 

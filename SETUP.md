@@ -343,6 +343,37 @@ pnpm --filter @career-web/video add dotenv-webpack @types/node eslint eslint-plu
 pnpm --filter @career-web/video add @emotion/styled @emotion/react jotai
 ```
 
+## Network Webpack Setup
+
+```
+cd apps
+pnpm create mf-app
+
+? Pick the name of your app: network
+? Project Type: Application
+? Port number: 3003
+? Framework: react
+? Language: typescript
+? CSS: Tailwind
+? Bundler: Webpack
+```
+
+-package.json 수정 후 재설치
+
+```
+pnpm i
+
+pnpm --filter @career-web/network add react-router-dom @auth0/auth0-spa-js @babel/runtime
+
+pnpm --filter @career-web/network add dotenv-webpack @types/node eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+```
+
+-   Recoil
+
+```
+pnpm --filter @career-web/network add recoil
+```
+
 ## Kill port
 
 ```
