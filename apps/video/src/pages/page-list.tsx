@@ -5,6 +5,7 @@ import { useAtomValue } from "jotai";
 
 const PageList: React.FC = () => {
     const courses = useAtomValue(coursesAtom);
+
     return (
         <>
             {courses.map((course) => (

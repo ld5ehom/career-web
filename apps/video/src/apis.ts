@@ -3,6 +3,7 @@ import {
     type CourseType,
     type UserType,
 } from "./types";
+
 /**
  * Fetches a list of videos from the server.
  * 서버에서 비디오 목록을 불러옵니다.
@@ -12,36 +13,34 @@ import {
  */
 export async function getCourses(token: string): Promise<CourseType[]> {
     const res = await fetch(
-        "http://localhost:4000/videos?_sort=id&_order=desc",
+        "http://localhost:4000/courses?_sort=id&_order=desc",
         {
             headers: {
-                Authorization: `Bearer ${token}`, // Authorization header with token (토큰을 포함한 인증 헤더)
+                Authorization: `Bearer ${token}`,
             },
         }
     );
-
-    return await res.json(); // Returns the video list (비디오 목록 반환)
+    return await res.json();
 }
 
 /**
- * Fetches detailed content for a specific video.
- * 특정 비디오의 상세 콘텐츠를 불러옵니다.
+ * Fetches the detailed content of a specific course by ID.
+ * 특정 강의의 상세 콘텐츠를 불러오는 함수
  *
  * @param token - Authentication token (인증 토큰)
- * @param id - ID of the video (비디오 ID)
- * @returns A promise that resolves to the content of the video (비디오 콘텐츠를 반환하는 Promise)
+ * @param id - The ID of the course to fetch details for (상세 정보를 불러올 강의 ID)
+ * @returns A promise that resolves to CourseContentsType. (CourseContentsType 반환)
  */
-export async function getVideoContents(
+export async function getCourseContents(
     token: string,
     id: number
 ): Promise<CourseContentsType> {
-    const res = await fetch(`http://localhost:4000/video-contents/${id}`, {
+    const res = await fetch(`http://localhost:4000/course-contents/${id}`, {
         headers: {
-            Authorization: `Bearer ${token}`, // Authorization header with token (토큰을 포함한 인증 헤더)
+            Authorization: `Bearer ${token}`,
         },
     });
-
-    return await res.json(); // Returns the video content details (비디오 상세 정보 반환)
+    return await res.json();
 }
 
 /**

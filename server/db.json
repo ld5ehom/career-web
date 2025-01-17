@@ -52,7 +52,7 @@
         }
     ],
 
-    "videos": [
+    "courses": [
         {
             "id": 1,
             "thumbnail": "/ucla-logo-180.png",
@@ -85,7 +85,7 @@
         }
     ],
 
-    "video-contents": [
+    "course-contents": [
         {
             "id": 1,
             "goals": [
@@ -111,6 +111,45 @@
                 "• Implement data structures like trees, graphs, and hash tables in practical applications.",
                 "• Learn to optimize algorithms for both time and space efficiency.",
                 "• Build more complex applications that require advanced problem-solving skills."
+            ]
+        },
+        {
+            "id": 3,
+            "goals": [
+                "• Understand computer architecture fundamentals, including digital logic and system design.",
+                "• Learn how computers execute programs through assembly language and machine code.",
+                "• Gain practical experience with low-level programming and hardware interaction."
+            ],
+            "summaries": [
+                "• Develop programs in assembly language to understand hardware-software interaction.",
+                "• Study logic gates, circuits, and how they contribute to processor design.",
+                "• Analyze how data is stored, processed, and transferred within computer systems."
+            ]
+        },
+        {
+            "id": 4,
+            "goals": [
+                "• Master software development tools and workflows, including version control and debugging.",
+                "• Build large-scale, maintainable applications through hands-on projects.",
+                "• Learn best practices for software construction, testing, and deployment."
+            ],
+            "summaries": [
+                "• Work collaboratively on real-world software projects using Git and GitHub.",
+                "• Apply testing frameworks to ensure software reliability and performance.",
+                "• Explore debugging strategies and automated deployment pipelines."
+            ]
+        },
+        {
+            "id": 5,
+            "goals": [
+                "• Gain expertise in full-stack web development using modern tools and frameworks.",
+                "• Design and develop responsive, scalable, and secure web applications.",
+                "• Implement advanced features such as server-side rendering and API integration."
+            ],
+            "summaries": [
+                "• Build dynamic websites using HTML, CSS, JavaScript, and Node.js.",
+                "• Learn about RESTful APIs, databases, and backend integration.",
+                "• Optimize web applications for performance, accessibility, and security."
             ]
         }
     ]

@@ -57,7 +57,7 @@
     position: relative;
     text-decoration: none;
     color: rgb(0 0 0/0.6);
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid aliceblue;
 }
 .global-nav-link.active {
     color: rgb(0 0 0/0.9);
@@ -66,8 +66,11 @@
 .global-nav-link-text {
     font-size: 13px;
 }
+
 /* Background color 전체 배경 */
 .global-container {
+    min-height: 100vh; /* 화면 높이만큼 최소 높이 설정 */
     padding-top: 53px;
     background-color: aliceblue;
+    box-sizing: border-box; /* padding 포함해서 높이 계산 */
 }

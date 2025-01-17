@@ -155,10 +155,15 @@ pnpm kill-port 3000 3001 3002 4000
     -   **Video Course Container Build** [9c9498a](https://github.com/ld5ehom/career-web/commit/9c9498af81561e013406f2b8af07f0b12eb99a69)
         -   Separated the video course section for better scalability, enabling the addition of various content types to the video field in the future.
         -   Designed to handle lecture-style content, similar to LinkedIn Learning videos.
-    -   **Video Center List Container Build**
-        -   Refactored function names to separate course content from the Video section for better modularity.
+    -   **Video Course Center List Container Build** [ff1d3d2](https://github.com/ld5ehom/career-web/commit/ff1d3d2b5a92c15e1cb19defb1078e4076948955)
+        -   Updated function naming conventions to better align with the separation of video content and course materials.
         -   Implemented a dummy file to display the Video Center Course List.
         -   Enabled navigation to the specific course page when a course item is clicked based on its ID.
+    -   **Video Course Detail Container Build**
+        -   Implemented the PageDetail Component to Display Detailed Video Course Information (apps/video/src/pages/page-detail.tsx)
+        -   Created the CourseDetailItem Component to Display Course Thumbnail, Title, and Description. (apps/video/src/components/course-detail-item.tsx)
+        -   Developed the CourseContents Component to Present Course Goals and Summaries. (apps/video/src/components/course-contents.tsx)
+        -   Added the CourseActions Component for User Interactions (Like, Add to My Course). (apps/video/src/components/course-actions.tsx)
 
 **Task 4. Network**
 
