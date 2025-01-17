@@ -34,7 +34,7 @@ const CourseListItem: React.FC<CourseListItemProps> = ({
     };
 
     return (
-        <CourseListItemWrapper onClick={onClick}> 
+        <CourseListItemWrapper onClick={onClick}>
             {/* Course Thumbnail (코스 썸네일) */}
             <div className="video--course-list-item-thumbnail">
                 <img src={thumbnail} alt={`${title} Thumbnail`} />
