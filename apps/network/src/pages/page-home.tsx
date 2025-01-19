@@ -1,9 +1,12 @@
 import React from "react";
+import ManageConnection from "../components/manage-connection";
+import ConnectionsContainer from "../containers/connections-container";
 
 const PageHome: React.FC = () => {
     return (
         <>
-            <div>Page Home</div>
+            <ManageConnection />
+            <ConnectionsContainer />
         </>
     );
 };

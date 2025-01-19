@@ -1,0 +1,16 @@
+/* Wrapper styles for the connections container */
+.wrapper {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    gap: 1rem; /* gap-4 */
+}
+
+/* Grid styles for the connections */
+.connections {
+    display: grid; /* grid */
+    grid-template-columns: repeat(4, 1fr); /* grid-cols-4 */
+    gap: 1rem; /* gap-4 */
+}

@@ -175,10 +175,15 @@ pkill -f node
         -   Configured routing and integrated shared components for seamless navigation.
         -   Added mock data for user connections and networking activities.
         -   Developed basic UI components for displaying user connection lists.
-    -   **Network Profile Container Implementation**
+    -   **Network Profile Container Implementation** [15a3cf1](https://github.com/ld5ehom/career-web/commit/15a3cf1bdff35a7f32271bef3f41a77f48272161)
         -   Configured and tested the API integration for retrieving user network data.
         -   Designed the user profile layout using TailwindCSS for consistent styling and responsive design.
         -   Displays user connections, contacts, events, and pages with live data fetched from the API. Includes profile details like the user's picture, name, and email.
+    -   **Network Center List Container Build**
+        -   Built a container to display the network connection list.
+        -   Implemented a layout to display the profile information (name, picture, role, etc.) of connected individuals in a list format.
+        -   Added action buttons to each connection card, allowing users to add new connections.
+        -   Used SCSS to define styles for profile images, names, roles, and other elements, optimizing the overall layout.
 
 **Task 5. Jobs**
 

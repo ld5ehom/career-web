@@ -4,6 +4,7 @@ import { AppRoutingManager } from "@career-web/shell-router";
 import Auth0ClientProvider from "./providers/auth0-client-provider";
 import { RecoilRoot } from "recoil";
 import Layout from "./components/layout";
+import PageHome from "./pages/page-home";
 
 export const routes: RouteObject[] = [
     {
@@ -21,11 +22,7 @@ export const routes: RouteObject[] = [
         children: [
             {
                 index: true,
-                element: (
-                    <div className="network--text-3xl">
-                        Network home (routes)
-                    </div>
-                ),
+                element: <PageHome />,
             },
         ],
     },
