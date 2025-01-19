@@ -1,0 +1,11 @@
+/* Wrapper styles for the manage connection container */
+.wrapper {
+    display: flex; /* flex */
+    flex-direction: row; /* flex-row */
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+    border: none; /* 테두리 제거 */
+}

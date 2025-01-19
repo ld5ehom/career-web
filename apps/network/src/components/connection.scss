@@ -1,0 +1,45 @@
+/* Wrapper styles for the connection card */
+.wrapper {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    gap: 1rem; /* gap-4 */
+    border-style: solid; /* border-solid */
+    border-width: 1px; /* border */
+    border-color: none; /* border-slate-700 */
+    align-items: center; /* items-center */
+    margin: 0 auto; /* 센터 정렬 */
+
+    &:hover {
+        border-color: #2563eb; /* border-blue-600 */
+        cursor: pointer; /* cursor-pointer */
+    }
+}
+
+/* Styles for the profile picture */
+.picture {
+    width: 3rem; /* w-12 */
+}
+
+/* Styles for the name */
+.name {
+    font-size: 1rem; /* text-base */
+    font-weight: bold; /* font-bold */
+    text-align: center; /* 센터 정렬 */
+}
+
+/* Styles for the role */
+.role {
+    font-size: 0.75rem; /* text-xs */
+    color: #4b5563; /* text-gray-600 */
+    text-align: center; /* 센터 정렬 */
+}
+
+/* Styles for the network count */
+.network-count {
+    font-size: 0.75rem; /* text-xs */
+    color: #4b5563; /* text-gray-600 */
+    text-align: center; /* 센터 정렬 */
+}
