@@ -83,7 +83,7 @@ pnpm dev
 -   Kill port
 
 ```
-pnpm kill-port 3000 3001 3002 3003 4000
+pkill -f node
 ```
 
 ---
@@ -170,7 +170,15 @@ pnpm kill-port 3000 3001 3002 3003 4000
 
 -   **Issues** : [task-4-network](https://github.com/ld5ehom/career-web/tree/task-4-network)
 -   **Details** :
-    -   **Network Package Setup**
+    -   **Network Package Setup** [032d4c5](https://github.com/ld5ehom/career-web/commit/032d4c5626e31273d4bf949c8e5a5ac7660a4de8)
+        -   Initialized the Network micro-app for managing user connections and recommendations.
+        -   Configured routing and integrated shared components for seamless navigation.
+        -   Added mock data for user connections and networking activities.
+        -   Developed basic UI components for displaying user connection lists.
+    -   **Network Profile Container Implementation**
+        -   Configured and tested the API integration for retrieving user network data.
+        -   Designed the user profile layout using TailwindCSS for consistent styling and responsive design.
+        -   Displays user connections, contacts, events, and pages with live data fetched from the API. Includes profile details like the user's picture, name, and email.
 
 **Task 5. Jobs**
 
