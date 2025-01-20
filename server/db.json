@@ -214,5 +214,55 @@
             "role": "Pomeranian",
             "networkCount": 500
         }
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "company": "Google",
+            "position": "Frontend Developer (Search Team)",
+            "location": "United States, Mountain View, CA (On-site)"
+        },
+        {
+            "id": 2,
+            "company": "Facebook (Meta)",
+            "position": "Front-end Engineer",
+            "location": "United States, Menlo Park, CA (Hybrid)"
+        },
+        {
+            "id": 3,
+            "company": "Amazon",
+            "position": "Senior Web Engineer (AWS)",
+            "location": "United States, Seattle, WA (Remote)"
+        },
+        {
+            "id": 4,
+            "company": "Microsoft",
+            "position": "Node.js Developer",
+            "location": "United States, Redmond, WA (Hybrid)"
+        },
+        {
+            "id": 5,
+            "company": "Netflix",
+            "position": "Frontend Developer (Streaming Platform)",
+            "location": "United States, Los Gatos, CA (On-site)"
+        },
+        {
+            "id": 6,
+            "company": "Apple",
+            "position": "Front-end Engineer",
+            "location": "United States, Cupertino, CA (Hybrid)"
+        },
+        {
+            "id": 7,
+            "company": "Uber",
+            "position": "Senior Web Engineer (Rider App)",
+            "location": "United States, San Francisco, CA (Remote)"
+        },
+        {
+            "id": 8,
+            "company": "Stripe",
+            "position": "Node.js Developer",
+            "location": "United States, San Francisco, CA (On-site)"
+        }
     ]
 }

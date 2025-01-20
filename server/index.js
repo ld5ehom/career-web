@@ -46,6 +46,15 @@ server.get("/my-network", (req, res) => {
     });
 });
 
+// Jobs
+server.get("/apply-status", (req, res) => {
+    res.jsonp({
+        myJobsCount: 13,
+        myOnlineClassesCount: 11,
+        mySavedUpdatesCount: 1,
+    });
+});
+
 // POST 요청의 본문 데이터를 처리하기 위한 바디 파서 사용 (Use body parser to handle POST request body data)
 server.use(jsonServer.bodyParser);
 

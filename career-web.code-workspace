@@ -17,6 +17,10 @@
             "path": "apps/network",
         },
         {
+            "name": "jobs",
+            "path": "apps/jobs",
+        },
+        {
             "name": "shell-router",
             "path": "packages/shell-router",
         },
