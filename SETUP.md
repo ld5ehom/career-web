@@ -374,6 +374,37 @@ pnpm --filter @career-web/network add dotenv-webpack @types/node eslint eslint-p
 pnpm --filter @career-web/network add recoil
 ```
 
+## Jobs Webpack Setup
+
+```
+cd apps
+pnpm create mf-app
+
+? Pick the name of your app: jobs
+? Project Type: Application
+? Port number: 3004
+? Framework: react
+? Language: typescript
+? CSS: CSS
+? Bundler: Webpack
+```
+
+-package.json 수정 후 재설치
+
+```
+pnpm i
+
+pnpm --filter @career-web/jobs add react-router-dom @auth0/auth0-spa-js @babel/runtime
+
+pnpm --filter @career-web/jobs add dotenv-webpack @types/node eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+```
+
+-   emotion, redux 설치
+
+```
+pnpm --filter @career-web/jobs add @emotion/styled @emotion/react @reduxjs/toolkit react-redux
+```
+
 ## Kill port
 
 ```

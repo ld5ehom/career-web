@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import {
     appVideoBasename,
-    appJobBasename,
+    appJobsBasename,
     appNetworkBasename,
     appPostingBasename,
 } from "../constants/prefix";
@@ -113,7 +113,7 @@ const Layout = () => {
                             <li className="global-nav-item">
                                 <NavLink
                                     className="global-nav-link"
-                                    to={`${appJobBasename}`}
+                                    to={`${appJobsBasename}`}
                                 >
                                     <Icon.Briefcase />
                                     <span className="global-nav-link-text">

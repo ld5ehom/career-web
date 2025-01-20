@@ -8,5 +8,5 @@ export const appNetworkBasename = `/${appNetworkPrefix}`;
 export const appVideoPrefix = "video";
 export const appVideoBasename = `/${appVideoPrefix}`;
 
-export const appJobPrefix = "job";
-export const appJobBasename = `/${appJobPrefix}`;
+export const appJobsPrefix = "jobs";
+export const appJobsBasename = `/${appJobsPrefix}`;
