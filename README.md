@@ -189,7 +189,10 @@ pkill -f node
 
 -   **Issues** : [task-5-jobs](https://github.com/ld5ehom/career-web/tree/task-5-jobs)
 -   **Details** :
-    -   **Jobs Packages Setup with Redux and Emotion**
+    -   **Jobs Packages Setup with Redux and Emotion** [b1ebcee](https://github.com/ld5ehom/career-web/commit/b1ebcee55e1419bbbf250209ecf3874a28ee5c02)
+    -   **Jobs My Status Container Build and API Integration**
+        -   Set up API integration using Redux with ApplyStatus and ApplyStatusContainer components to manage and render dynamic job profile data.
+        -   Built a common layout using styles.ts for consistent structuring and improved UI flexibility across the components.
 
 ---
 
@@ -198,3 +201,7 @@ pkill -f node
 **Task 6. Fragment Creation**
 
 **Task 7. Federation**
+
+---
+
+### Milestone 3: Bug Fixes and Updates
