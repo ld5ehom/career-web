@@ -96,10 +96,10 @@ pkill -f node
 
 -   **Issues** : [task-1-layout](https://github.com/ld5ehom/career-web/tree/task-1-layout)
 -   **Details** :
-    -   **Setup and Configure App Shell and React Icons** [f301e05](https://github.com/ld5ehom/career-web/commit/f301e0522042430fdd637021ef85b6a9c70e0805)
+    -   **Setup and Configure App Shell and React Icons** -> [f301e05](https://github.com/ld5ehom/career-web/commit/f301e0522042430fdd637021ef85b6a9c70e0805)
         -   Setup for React Icons to Implement Components
         -   Create and Configure App Shell Package
-    -   **Implement authentication handling and navigation with react-router-dom** [83eb95a](https://github.com/ld5ehom/career-web/commit/83eb95abd9113cd7790af6d3d5645f13004cc8fa)
+    -   **Implement authentication handling and navigation with react-router-dom** ->[83eb95a](https://github.com/ld5ehom/career-web/commit/83eb95abd9113cd7790af6d3d5645f13004cc8fa)
         -   Set up routing between micro apps based on browser URLs: Established routing system to ensure seamless navigation across micro frontends, allowing users to switch between different micro apps without page reloads.
         -   Dynamically managed micro app routes within the Shell application: Routes for each micro app are dynamically added and managed within the Shell, ensuring that each micro app is accessible via its respective URL. This allows for a flexible routing structure that can adapt to changes in the system.
         -   Integrated authentication handling into the routing system: Authentication guards were added to protect specific routes. If a user is not authenticated, they are redirected to a login page, ensuring unauthorized users cannot access sensitive content.
@@ -110,14 +110,14 @@ pkill -f node
 
 -   **Issues** : [task-2-post](https://github.com/ld5ehom/career-web/tree/task-2-post)
 -   **Details** :
-    -   **TEST API Setup** [2209c2b](https://github.com/ld5ehom/career-web/commit/2209c2be6294e6893e1a56263de46cf2b05df0c1)
+    -   **TEST API Setup** -> [2209c2b](https://github.com/ld5ehom/career-web/commit/2209c2be6294e6893e1a56263de46cf2b05df0c1)
         ```
         pnpm --filter @career-web/server start:live
         ```
         ```
         http://localhost:4000/posts
         ```
-    -   **Posting Setup** [eb39f1c](https://github.com/ld5ehom/career-web/commit/eb39f1ceb70dfc59e0c1340381b40da3d4cefd6a)
+    -   **Posting Setup** -> [eb39f1c](https://github.com/ld5ehom/career-web/commit/eb39f1ceb70dfc59e0c1340381b40da3d4cefd6a)
         -   Install the Auth0 package in the posting
         ```
         pnpm --filter @career-web/posting add @auth0/auth0-spa-js
@@ -137,7 +137,7 @@ pkill -f node
         ```
         pnpm --filter @career-web/posting add eslint eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
         ```
-    -   **Posting components update** [e087192](https://github.com/ld5ehom/career-web/commit/e087192d392ac0407ade30c4f93957294767befe)
+    -   **Posting components update** -> [e087192](https://github.com/ld5ehom/career-web/commit/e087192d392ac0407ade30c4f93957294767befe)
         -   Updated the Post, WritePost, and Profile components.
         -   Improved useEffect hooks for fetching data (posts and user).
         -   Integrated getUser, getPosts, removePost, and createPost API calls into components for better functionality.
@@ -146,21 +146,21 @@ pkill -f node
 
 -   **Issues** : [task-3-video](https://github.com/ld5ehom/career-web/tree/task-3-video)
 -   **Details** :
-    -   **Video Packages Setup with Jotai and Emotion** [446c13e](https://github.com/ld5ehom/career-web/commit/446c13e715043bc17528a79e4912adcfc4d8d38b)
+    -   **Video Packages Setup with Jotai and Emotion** -> [446c13e](https://github.com/ld5ehom/career-web/commit/446c13e715043bc17528a79e4912adcfc4d8d38b)
         -   Set up a video management package that leverages Jotai for state management and Emotion for styling.
-    -   **Video API Setup** [0de3e81](https://github.com/ld5ehom/career-web/commit/0de3e81d0dece577aaa46e4e225d4772eb8c6422)
-    -   **Video Profile Container Build** [e59aa03](https://github.com/ld5ehom/career-web/commit/e59aa030fc2754ef2d93e40adbc9ec4eac4f8cdb)
+    -   **Video API Setup** -> [0de3e81](https://github.com/ld5ehom/career-web/commit/0de3e81d0dece577aaa46e4e225d4772eb8c6422)
+    -   **Video Profile Container Build** -> [e59aa03](https://github.com/ld5ehom/career-web/commit/e59aa030fc2754ef2d93e40adbc9ec4eac4f8cdb)
         -   Implemented the Video Profile UI to display user information such as profile image, name, email, profile views, and update exposure.
         -   Integrated user data fetching using Jotai state management to dynamically display real-time profile information.
         -   Added responsive styling for the profile component using styled-components to ensure a seamless user experience across devices.
-    -   **Video Course Container Build** [9c9498a](https://github.com/ld5ehom/career-web/commit/9c9498af81561e013406f2b8af07f0b12eb99a69)
+    -   **Video Course Container Build** -> [9c9498a](https://github.com/ld5ehom/career-web/commit/9c9498af81561e013406f2b8af07f0b12eb99a69)
         -   Separated the video course section for better scalability, enabling the addition of various content types to the video field in the future.
         -   Designed to handle lecture-style content, similar to LinkedIn Learning videos.
-    -   **Video Course Center List Container Build** [ff1d3d2](https://github.com/ld5ehom/career-web/commit/ff1d3d2b5a92c15e1cb19defb1078e4076948955)
+    -   **Video Course Center List Container Build** -> [ff1d3d2](https://github.com/ld5ehom/career-web/commit/ff1d3d2b5a92c15e1cb19defb1078e4076948955)
         -   Updated function naming conventions to better align with the separation of video content and course materials.
         -   Implemented a dummy file to display the Video Center Course List.
         -   Enabled navigation to the specific course page when a course item is clicked based on its ID.
-    -   **Video Course Detail Container Build** [cb8b5cb](https://github.com/ld5ehom/career-web/commit/cb8b5cbd26c22bd2bc046589941cbafb7b1007ae)
+    -   **Video Course Detail Container Build** -> [cb8b5cb](https://github.com/ld5ehom/career-web/commit/cb8b5cbd26c22bd2bc046589941cbafb7b1007ae)
         -   Implemented the PageDetail Component to Display Detailed Video Course Information (apps/video/src/pages/page-detail.tsx)
         -   Created the CourseDetailItem Component to Display Course Thumbnail, Title, and Description. (apps/video/src/components/course-detail-item.tsx)
         -   Developed the CourseContents Component to Present Course Goals and Summaries. (apps/video/src/components/course-contents.tsx)
@@ -170,16 +170,16 @@ pkill -f node
 
 -   **Issues** : [task-4-network](https://github.com/ld5ehom/career-web/tree/task-4-network)
 -   **Details** :
-    -   **Network Package Setup** [032d4c5](https://github.com/ld5ehom/career-web/commit/032d4c5626e31273d4bf949c8e5a5ac7660a4de8)
+    -   **Network Package Setup** -> [032d4c5](https://github.com/ld5ehom/career-web/commit/032d4c5626e31273d4bf949c8e5a5ac7660a4de8)
         -   Initialized the Network micro-app for managing user connections and recommendations.
         -   Configured routing and integrated shared components for seamless navigation.
         -   Added mock data for user connections and networking activities.
         -   Developed basic UI components for displaying user connection lists.
-    -   **Network Profile Container Implementation** [15a3cf1](https://github.com/ld5ehom/career-web/commit/15a3cf1bdff35a7f32271bef3f41a77f48272161)
+    -   **Network Profile Container Implementation** -> [15a3cf1](https://github.com/ld5ehom/career-web/commit/15a3cf1bdff35a7f32271bef3f41a77f48272161)
         -   Configured and tested the API integration for retrieving user network data.
         -   Designed the user profile layout using TailwindCSS for consistent styling and responsive design.
         -   Displays user connections, contacts, events, and pages with live data fetched from the API. Includes profile details like the user's picture, name, and email.
-    -   **Network Center List Container Build** [3ae4897](https://github.com/ld5ehom/career-web/commit/3ae4897455517b1938289792ec71a26b8cd92d5f)
+    -   **Network Center List Container Build** -> [3ae4897](https://github.com/ld5ehom/career-web/commit/3ae4897455517b1938289792ec71a26b8cd92d5f)
         -   Built a container to display the network connection list.
         -   Implemented a layout to display the profile information (name, picture, role, etc.) of connected individuals in a list format.
         -   Added action buttons to each connection card, allowing users to add new connections.
@@ -189,10 +189,13 @@ pkill -f node
 
 -   **Issues** : [task-5-jobs](https://github.com/ld5ehom/career-web/tree/task-5-jobs)
 -   **Details** :
-    -   **Jobs Packages Setup with Redux and Emotion** [b1ebcee](https://github.com/ld5ehom/career-web/commit/b1ebcee55e1419bbbf250209ecf3874a28ee5c02)
-    -   **Jobs My Status Container Build and API Integration**
+    -   **Jobs Packages Setup with Redux and Emotion** -> [b1ebcee](https://github.com/ld5ehom/career-web/commit/b1ebcee55e1419bbbf250209ecf3874a28ee5c02)
+    -   **Jobs My Status Container Build and API Integration** -> [61bdc41](https://github.com/ld5ehom/career-web/commit/61bdc414a61b4396ad7901a5a7827b03b0ca5195)
         -   Set up API integration using Redux with ApplyStatus and ApplyStatusContainer components to manage and render dynamic job profile data.
         -   Built a common layout using styles.ts for consistent structuring and improved UI flexibility across the components.
+    -   **Jobs Home Container Integration**
+        -   Integrated API calls with Redux for state management, enabling smooth micro-app operations.
+        -   Implemented job list components to display customized job listings based on user profile and preferences.
 
 ---
 
